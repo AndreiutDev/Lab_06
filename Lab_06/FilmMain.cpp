@@ -1,13 +1,19 @@
 #include<iostream>
 #include <stdio.h>
 #include "ValidatorClass1.h"
+#include "FilmUI.h"
+
+#include <fstream>
+
 using namespace std;
-
-
-
 
 int main(int argc, char** argv)
 {
+    FilmUI menu;
+
+    menu.Login();
+
+
     /*int key;
     bool penice = false;
     ExceptionClass ex;

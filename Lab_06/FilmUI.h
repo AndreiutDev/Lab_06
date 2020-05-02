@@ -7,8 +7,9 @@ class FilmUI
 {
 	private:
 		FilmController controller;
-		FilmRepo repo;
-
+		//FilmRepo repo;
+		AdminUI AdminMenu = AdminUI(controller);
+		UserUI UserMenu = UserUI(controller);
 
 		std::string person;
 	public:

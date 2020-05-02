@@ -26,18 +26,18 @@ void AdminUI::Menu()
 		if (key == 1) {
 
 			this->controller.Add();
-
+			controller.writeFile();
 		}
 		if (key == 2) {
 			
 			this->controller.Delete();
-
+			controller.writeFile();
 		}
 
 		if (key == 3) {
 			
 			this->controller.Update();
-
+			controller.writeFile();
 		}
 
 		if (key == 4) {

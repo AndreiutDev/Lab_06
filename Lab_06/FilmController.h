@@ -107,7 +107,7 @@ class FilmController
 
 		std::vector<Film>::iterator GetwishListSearch(Film f);
 
-		//Menu ADMIN
+		void writeFile();
 		
 
 };

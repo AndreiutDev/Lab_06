@@ -214,6 +214,9 @@ std::vector<Film>::iterator FilmController::GetwishListSearch(Film f)
 	return userRepo.wishListSearch(f);
 }
 
+void FilmController::writeFile() {
+	this->repo.writeFile();
+}
 
 void FilmController::AddTestFilms() {
 

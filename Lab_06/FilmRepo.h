@@ -1,8 +1,10 @@
 #pragma once
+#include <fstream>
 #include <vector>
 #include <algorithm>
 #include "Film.h"
 #include <string>
+#include <iostream>
 
 class FilmRepo
 {
@@ -64,6 +66,15 @@ public:
 	/// <returns>	A vector with these films </returns>
 
 	std::vector<Film>::iterator search(Film f);
+
+	///-------------------------------------------------------------------------------------------------
+	/// <summary>	Reads from file. </summary>
+	///
+	/// <remarks>	PC, 5/2/2020. </remarks>
+
+	void readFromFile();
+	
+	void writeFile();
 
 	~FilmRepo();
 };

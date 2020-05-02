@@ -38,27 +38,26 @@ void FilmUI::Login() {
 		case 0:
 			this->person = "";
 			running = false;
+			
 			break;
 
 		default:
 			std::cout << "Invalid option. Choose again!";
 		}
 	}
-	
 }
 
 void FilmUI::Menu() {
-	controller.AddTestFilms();
+	//controller.AddTestFilms();
+	
 	if (this->person == "User") {
 
-		UserUI UserMenu = UserUI(controller);
 		UserMenu.Menu();
 		Login();
 	}
 	else{
-
-		AdminUI AdminMenu = AdminUI(controller);
 		AdminMenu.Menu();
+		controller.writeFile();
 		Login();
 	}
 }
