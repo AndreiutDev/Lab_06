@@ -5,10 +5,12 @@
 #include "Film.h"
 #include <string>
 #include <iostream>
+#include "FileClass.h"
 
 class FilmRepo
 {
 private:
+	//FileClass file;
 	std::vector<Film> filmList;
 public:
 	FilmRepo();

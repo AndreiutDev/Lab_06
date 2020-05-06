@@ -5,6 +5,7 @@
 
 FilmRepo::FilmRepo()
 {
+	//file.readFromFile();
 	this->readFromFile();
 }
 
@@ -75,7 +76,6 @@ std::vector<Film> FilmRepo::ShowMovies(std::string genre) {
 
 	return genre_list;
 }
-
 void FilmRepo::readFromFile() {
 
 	std::ifstream f("AdminMovies.txt");
@@ -100,7 +100,7 @@ void FilmRepo::writeFile() {
 	g.open("AdminMovies.txt", std::fstream::out);
 
 	std::vector<Film>::iterator ptr;
-	for (ptr = filmList.begin(); ptr < filmList.end(); ptr++) {
+	for (ptr = this->filmList.begin(); ptr < this->filmList.end(); ptr++) {
 
 		g << ptr->GetTitle() << '\n';
 		g << ptr->GetGenre() << '\n';
@@ -113,14 +113,13 @@ void FilmRepo::writeFile() {
 
 		g << temp << '\n';
 
-		std::cout << ptr->GetTitle()<<'\n';
+		std::cout << ptr->GetTitle() << '\n';
 
 	}
 
 	printf("Bobilobi");
+	//g << "Cioaba";
 	g.close();
-
-	g << "Cioaba";
 }
 
 FilmRepo::~FilmRepo()

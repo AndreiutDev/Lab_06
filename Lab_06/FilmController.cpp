@@ -51,11 +51,11 @@ void FilmController::Delete()
 	Film f = Film(title, "", apparitionYear, -1, L"");
 	if (repo.filmDelete(f) == true)
 	{
-		std::cout << "The film " + title + " has been deleted.\n";
+		std::cout << "The film " + title + " was deleted.\n";
 	}
 	else
 	{
-		std::cout << "The film has not been found.\n";
+		std::cout << "The film was not found.\n";
 	}
 
 }

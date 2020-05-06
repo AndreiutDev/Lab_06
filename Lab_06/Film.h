@@ -11,6 +11,7 @@ private:
 	std::wstring trailer;
 
 public:
+	Film() {}
 	Film(std::string title, std::string genre, int apparitionYear, int likeAmount, std::wstring trailer);
 	std::string GetTitle();
 	std::string GetGenre();

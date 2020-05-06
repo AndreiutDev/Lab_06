@@ -140,6 +140,7 @@
   <ItemGroup>
     <ClCompile Include="AdminUI.cpp" />
     <ClCompile Include="ExceptionClass.cpp" />
+    <ClCompile Include="FileClass.cpp" />
     <ClCompile Include="Film.cpp" />
     <ClCompile Include="FilmController.cpp" />
     <ClCompile Include="FilmMain.cpp" />
@@ -152,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="AdminUI.h" />
     <ClInclude Include="ExceptionClass.h" />
+    <ClInclude Include="FileClass.h" />
     <ClInclude Include="Film.h" />
     <ClInclude Include="FilmController.h" />
     <ClInclude Include="FilmRepo.h" />

@@ -57,7 +57,7 @@ void FilmUI::Menu() {
 	}
 	else{
 		AdminMenu.Menu();
-		controller.writeFile();
+		//controller.writeFile();
 		Login();
 	}
 }
