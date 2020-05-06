@@ -12,7 +12,7 @@ class FilmController
 
 	public:
 
-
+		std::vector<Film> getMovieList();
 		void AddTestFilms();
 		//FILM REPO
 

@@ -1,4 +1,5 @@
 #pragma once
+#include "storeWishList.h"
 #include "FilmController.h"
 #include <iostream>
 class UserUI

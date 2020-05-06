@@ -114,6 +114,11 @@ void FilmController::Update()
 	}
 }
 
+std::vector<Film> FilmController::getMovieList()
+{
+	return repo.ShowMovies("all");
+}
+
 void FilmController::ShowMovies()
 {
 	std::vector<Film> movies = repo.ShowMovies("All");

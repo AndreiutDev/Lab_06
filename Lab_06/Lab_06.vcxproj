@@ -146,6 +146,7 @@
     <ClCompile Include="FilmMain.cpp" />
     <ClCompile Include="FilmRepo.cpp" />
     <ClCompile Include="FilmUI.cpp" />
+    <ClCompile Include="storeWishList.cpp" />
     <ClCompile Include="userRepo.cpp" />
     <ClCompile Include="UserUI.cpp" />
     <ClCompile Include="ValidatorClass1.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="FilmController.h" />
     <ClInclude Include="FilmRepo.h" />
     <ClInclude Include="FilmUI.h" />
+    <ClInclude Include="storeWishList.h" />
     <ClInclude Include="userRepo.h" />
     <ClInclude Include="UserUI.h" />
     <ClInclude Include="ValidatorClass1.h" />

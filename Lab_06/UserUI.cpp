@@ -19,7 +19,8 @@ void UserUI::Menu()
 {
 	
 	int key;
-	
+	std::string a = "HTML";
+	storeWishList cioaba = storeWishList(controller.getMovieList(), a);
 	int wishListKey;
 	bool running = true;
 	while (running)
