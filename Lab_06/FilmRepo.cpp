@@ -116,9 +116,6 @@ void FilmRepo::writeFile() {
 		std::cout << ptr->GetTitle() << '\n';
 
 	}
-
-	printf("Bobilobi");
-	//g << "Cioaba";
 	g.close();
 }
 

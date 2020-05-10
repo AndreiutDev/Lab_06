@@ -5,14 +5,14 @@ using namespace std;
 class ExceptionClass
 {
 public:
-    exception getInvalidIntException() throw(invalid_argument)
+    exception getInvalidIntException() throw()
     {
-        return invalid_argument("Invalid integer.");
+        return exception("Invalid integer.\n");
     }
 
-    exception getInvalidIntIntervalException() throw(invalid_argument)
+    exception getInvalidIntIntervalException() throw(exception)
     {
-        return invalid_argument("Wrong interval.");
+        return exception("Wrong interval.\n");
     }
 
     void throwStandardException() throw()
