@@ -20,10 +20,21 @@ void UserUI::Menu()
 	
 	int key;
 	int wishListKey;
-	storeWishList loli;
+	accesFile acces = accesFile(this->controller.getWishList());
+	std::cout << "How do you want to save your data?\n";
+	std::cout << "1.As Html\n";
+	std::cout << "2.As CSV\n";
+	int opt;
+	bool start = false;
+	while (start == false) {
+		std::cin >> opt;
+		start = acces.accesData(opt);
+	}
+
 	bool running = true;
 	while (running)
 	{
+		acces.changeFile();
 		PrintMenu();
 		std::cin >> key;
 		if (key == 1)
@@ -37,9 +48,12 @@ void UserUI::Menu()
 		else if (key == 3)
 		{
 			this->controller.ShowWishList();
+			acces.ShowWishListWithNewFormat();
 		}
 		else if (key == 4) {
 			running = false;
 		}
+		acces.refreshData(this->controller.getWishList());
+		acces.changeFile();
 	}
 }

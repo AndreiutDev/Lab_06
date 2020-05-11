@@ -1,6 +1,7 @@
 #pragma once
 #include "FilmRepo.h"
 #include "userRepo.h"
+#include "ValidatorClass1.h"
 #include <iostream>
 
 class FilmController
@@ -8,7 +9,7 @@ class FilmController
 	private:
 		FilmRepo repo;
 		WishlistRepo userRepo;
-
+		ValidatorClass validator;
 
 	public:
 
@@ -96,7 +97,7 @@ class FilmController
 
 		void ShowWishList();
 
-
+		std::vector<Film> getWishList() { return userRepo.ShowWishList(); };
 
 		///-------------------------------------------------------------------------------------------------
 		/// <summary>	Getwish list search. </summary>

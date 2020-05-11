@@ -51,6 +51,12 @@
     <ClCompile Include="storeWishList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="accesFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="storeBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Film.h">
@@ -86,9 +92,18 @@
     <ClInclude Include="storeWishList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="accesFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="storeBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="AdminMovies.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="wishList.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>

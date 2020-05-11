@@ -1,5 +1,7 @@
 #pragma once
 #include <vector>
+#include <fstream>
+#include <iostream>
 #include  "Film.h"
 
 class WishlistRepo
@@ -7,7 +9,10 @@ class WishlistRepo
 private:
 	std::vector<Film> wishList;
 public:
-
+	WishlistRepo()
+	{
+		readListInBasicFormat();
+	}
 	///-------------------------------------------------------------------------------------------------
 	/// <summary>	Wish list add. </summary>
 	/// 
@@ -40,5 +45,12 @@ public:
 	/// <returns>	A vector with the films from the wishList </returns>
 
 	std::vector<Film> ShowWishList();
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	/// <summary>	Reads list in basic format. </summary>
+	///
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	void readListInBasicFormat();
 };
 

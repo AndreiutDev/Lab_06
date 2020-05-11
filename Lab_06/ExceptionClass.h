@@ -10,14 +10,20 @@ public:
         return exception("Invalid integer.\n");
     }
 
-    exception getInvalidIntIntervalException() throw(exception)
+    exception getInvalidIntIntervalException() throw()
     {
         return exception("Wrong interval.\n");
     }
 
-    void throwStandardException() throw()
+    exception throwStandardException() throw()
     {
         throw 0;
+    }
+    exception throwShortSizeException() throw() {
+        return exception("Size to short");
+    }
+    exception throwInvalidUrl() throw() {
+        return exception("Url is wrong");
     }
 };
 

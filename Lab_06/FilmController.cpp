@@ -5,19 +5,49 @@
 #include <windows.h>
 #include <atlstr.h>
 
+#include <typeinfo>
+
 void FilmController::Add()
 {
 	std::string title;
 	std::cout << "Give title: ";
-	std::getline(std::cin >> std::ws, title);
+	try {
+		std::getline(std::cin >> std::ws, title);
+		validator.validateStringLength(title);
+	}
+	catch (...) {
+		Add();
+		return;
+	}
+	
 
 	int year;
 	std::cout << "Give apparition year: ";
-	std::cin >> year;
+	try {
+		std::cin >> year;
+		validator.integerInterval(year);
+	}
+	catch (...) {
+		cin.clear();
+		//and empty it
+		cin.ignore(INT_MAX, '\n');
+		//std::cout << typeid(year).name();
+		Add();
+		return;
+	}
+	
 
 	std::string genre;
 	std::cout << "Give genre: ";
-	std::cin >> genre;
+	
+	try {
+		std::cin >> genre;
+		validator.validateStringLength(genre);
+	}
+	catch (...) {
+		Add();
+		return;
+	}
 
 	int likes;
 	std::cout << "Give number of likes: ";
@@ -25,7 +55,15 @@ void FilmController::Add()
 
 	std::wstring trailer;
 	std::cout << "Give trailer url: ";
-	std::wcin >> trailer;
+	//try {
+		std::wcin >> trailer;
+	//	validator.validateUrl(trailer);
+	//}
+	//catch (...) {
+	//	Add();
+	//	return;
+	//}
+	
 
 	Film f = Film(title, genre, year, likes, trailer);
 
@@ -42,13 +80,26 @@ void FilmController::Add()
 void FilmController::Delete()
 {
 	std::string title;
-	int apparitionYear;
 
 	std::cout << "The title of the film to be deleted: \n";
 	std::getline(std::cin >> std::ws, title);
 	std::cout << "The year of apparition: \n";
-	std::cin >> apparitionYear;
-	Film f = Film(title, "", apparitionYear, -1, L"");
+	int year;
+	std::cout << "Give apparition year: ";
+	try {
+		std::cin >> year;
+		validator.integerInterval(year);
+	}
+	catch (...) {
+		cin.clear();
+		//and empty it
+		cin.ignore(INT_MAX, '\n');
+		//std::cout << typeid(year).name();
+		Delete();
+		return;
+	}
+
+	Film f = Film(title, "", year, -1, L"");
 	if (repo.filmDelete(f) == true)
 	{
 		std::cout << "The film " + title + " was deleted.\n";
@@ -72,22 +123,49 @@ void FilmController::Update()
 
 	std::cout << "The title of the film to be updated: \n";
 	std::getline(std::cin >> std::ws, title1);
+
 	std::cout << "The year of apparition: \n";
 	std::cin >> apparitionYear;
 	Film f_to_search = Film(title1, "", apparitionYear, -1, L"");
 
 	///details about the new film
 	std::string title;
-	std::cout << "Give new title: ";
-	std::getline(std::cin >> std::ws, title);
+	std::cout << "Give title: ";
+	try {
+		std::getline(std::cin >> std::ws, title);
+		validator.validateStringLength(title);
+	}
+	catch (...) {
+		Update();
+		return;
+	}
 
 	int year;
-	std::cout << "Give new apparition year: ";
-	std::cin >> year;
+	std::cout << "Give apparition year: ";
+	try {
+		std::cin >> year;
+		validator.integerInterval(year);
+	}
+	catch (...) {
+		cin.clear();
+		//and empty it
+		cin.ignore(INT_MAX, '\n');
+		//std::cout << typeid(year).name();
+		Update();
+		return;
+	}
 
 	std::string genre;
-	std::cout << "Give new genre: ";
-	std::cin >> genre;
+	std::cout << "Give genre: ";
+
+	try {
+		std::cin >> genre;
+		validator.validateStringLength(genre);
+	}
+	catch (...) {
+		Update();
+		return;
+	}
 
 	int likes;
 	std::cout << "Give new number of likes: ";

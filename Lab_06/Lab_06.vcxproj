@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="accesFile.cpp" />
     <ClCompile Include="AdminUI.cpp" />
     <ClCompile Include="ExceptionClass.cpp" />
     <ClCompile Include="FileClass.cpp" />
@@ -146,12 +147,14 @@
     <ClCompile Include="FilmMain.cpp" />
     <ClCompile Include="FilmRepo.cpp" />
     <ClCompile Include="FilmUI.cpp" />
+    <ClCompile Include="storeBase.cpp" />
     <ClCompile Include="storeWishList.cpp" />
     <ClCompile Include="userRepo.cpp" />
     <ClCompile Include="UserUI.cpp" />
     <ClCompile Include="ValidatorClass1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="accesFile.h" />
     <ClInclude Include="AdminUI.h" />
     <ClInclude Include="ExceptionClass.h" />
     <ClInclude Include="FileClass.h" />
@@ -159,6 +162,7 @@
     <ClInclude Include="FilmController.h" />
     <ClInclude Include="FilmRepo.h" />
     <ClInclude Include="FilmUI.h" />
+    <ClInclude Include="storeBase.h" />
     <ClInclude Include="storeWishList.h" />
     <ClInclude Include="userRepo.h" />
     <ClInclude Include="UserUI.h" />
@@ -166,6 +170,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="AdminMovies.txt" />
+    <Text Include="wishList.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
