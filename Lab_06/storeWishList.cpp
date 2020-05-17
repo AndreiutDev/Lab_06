@@ -1,25 +1,27 @@
 #include "storeWishList.h"
-
+#include "TxtStore.h"
+#include "HtmlClass.h"
+#include "CsvStore.h"
 storeWishList::storeWishList() {
-    /*this->storeMap.insert("txt", TxtStore("nameFile.txt"));
-    this->storeMap.insert("html", HtmlStore("nameFile.html"));
-    this->storeMap.insert("csv", CsvStore("nameFile.csv"));*/
+
 }
 
 void storeWishList::storeListInSpecialFormat(std::vector<Film> filmList, std::string storage_mode) {
     
     if (storage_mode == "HTML")
     {
-        saveAsHtml(filmList);
+        HtmlClass html = HtmlClass("frumos.html");
+        html.save(filmList);
     }
     else if (storage_mode == "CSV")
     {
-        saveAsCsv(filmList);
+        CsvStore csv = CsvStore("frumos.csv");
+        csv.save(filmList);
     }
 }
 
 void storeWishList::saveAsHtml(std::vector<Film> filmList) {
-    ofstream g;
+   /* ofstream g;
     vector<Film>::iterator pointer;
     g.open("AdminMovies.html", std::fstream::out);
     g << "<!DOCTYPE html>\n"
@@ -68,11 +70,11 @@ void storeWishList::saveAsHtml(std::vector<Film> filmList) {
     g << "</table>\n"
         "</body>\n"
         "</html>\n";
-    g.close();
+    g.close();*/
 }
 
 void storeWishList::saveAsCsv(std::vector<Film> filmList) {
-
+    /*
     ofstream g;
     vector<Film>::iterator pointer;
     g.open("wishList.csv", std::fstream::out);
@@ -88,7 +90,7 @@ void storeWishList::saveAsCsv(std::vector<Film> filmList) {
         g << trailer + "\n";
 
     }
-    g.close();
+    g.close();*/
 }
 
 void storeWishList::saveAs(string format, vector<Film> filmList)
@@ -97,6 +99,9 @@ void storeWishList::saveAs(string format, vector<Film> filmList)
 
 void storeWishList::storeListInBasicFormat(std::vector<Film> filmList)
 {
+    TxtStore txt = TxtStore("frumos.txt");
+    txt.save(filmList);
+    /*
     ofstream g;
     vector<Film>::iterator ptr;
     g.open("wishList.txt", std::fstream::out);
@@ -115,7 +120,7 @@ void storeWishList::storeListInBasicFormat(std::vector<Film> filmList)
 
         std::cout << ptr->GetTitle() << '\n';
     }
-    g.close();
+    g.close();*/
 }
 
 

@@ -7,11 +7,11 @@
 using namespace std;
 
 
-class storeWishList : storeBase<Film>
+class storeWishList
 {
 private:
     
-    std::map<string, storeBase<Film>> storeMap;
+    //std::map<string, storeBase<Film>> storeMap;
 
 public:
     storeWishList();
