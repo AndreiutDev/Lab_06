@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="accesFile" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACEAAAAAABAAAIAAICAAAAAAAAAAABAAAAIAAAAA=</HashCode>
+      <FileName>accesFile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="storeWishList" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAgAAQQAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>storeWishList.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="storeBase&lt;T&gt;" Collapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>storeBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserUI" Collapsed="true">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAACAAAAAIAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserUI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValidatorClass" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAKAAABAAAAAAAgAAAAABAAAAAAAAAAIA=</HashCode>
+      <FileName>ValidatorClass1.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExceptionClass" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAgAAEAAAAAAABAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ExceptionClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdminUI" Collapsed="true">
+    <Position X="9.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAEAAAAAAAAAAIAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdminUI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FilmUI" Collapsed="true">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAABAAAAIAAAAAAAYAACAIAA=</HashCode>
+      <FileName>FilmUI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FilmController" Collapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AS4AgACAAAABIAAAIAGQAAAAAAEAAAAgAAAAAoAAAAg=</HashCode>
+      <FileName>FilmController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FilmRepo" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACBAAEAAAABAAAgAAQgAIAAAACAACAAAAAAAAg=</HashCode>
+      <FileName>FilmRepo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WishlistRepo" Collapsed="true">
+    <Position X="8.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAABAgAAAAAIAgAAAAAIAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>userRepo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Film" Collapsed="true">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgCCAACEQAAAAAIAAAAAAgACAACIBAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Film.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileClass" Collapsed="true">
+    <Position X="8.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>FileClass.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

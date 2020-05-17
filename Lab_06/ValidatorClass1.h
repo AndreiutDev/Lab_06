@@ -8,6 +8,13 @@ class ValidatorClass
 
     private:
         ExceptionClass exceptions;
+
+        //validates an url
+        int webCheck(const std::string& url)
+        {
+
+            return (std::system(("wget --spider -q " + url).c_str()));
+        }
     public:
 
         //checks if an input is integer
@@ -22,12 +29,7 @@ class ValidatorClass
         //validates the length of a string input, it cannot be shorter than a letter
         bool validateStringLength(std::string value);
 
-        //validates an url
-        int webCheck(const std::string& url)
-        {
-            
-            return (std::system(("wget --spider -q " + url).c_str()));
-        }
+        
         //returns validation result
         bool validateUrl(std::wstring url);
 

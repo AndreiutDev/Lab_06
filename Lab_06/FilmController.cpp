@@ -25,7 +25,7 @@ void FilmController::Add()
 	std::cout << "Give apparition year: ";
 	try {
 		std::cin >> year;
-		validator.integerInterval(year);
+		validator.validateIntegerInterval(year,1885,2020);
 	}
 	catch (...) {
 		cin.clear();
@@ -88,7 +88,7 @@ void FilmController::Delete()
 	std::cout << "Give apparition year: ";
 	try {
 		std::cin >> year;
-		validator.integerInterval(year);
+		validator.validateIntegerInterval(year, 1885, 2020);
 	}
 	catch (...) {
 		cin.clear();

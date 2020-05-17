@@ -1,7 +1,9 @@
 #include "storeWishList.h"
 
 storeWishList::storeWishList() {
-
+    /*this->storeMap.insert("txt", TxtStore("nameFile.txt"));
+    this->storeMap.insert("html", HtmlStore("nameFile.html"));
+    this->storeMap.insert("csv", CsvStore("nameFile.csv"));*/
 }
 
 void storeWishList::storeListInSpecialFormat(std::vector<Film> filmList, std::string storage_mode) {
@@ -87,6 +89,10 @@ void storeWishList::saveAsCsv(std::vector<Film> filmList) {
 
     }
     g.close();
+}
+
+void storeWishList::saveAs(string format, vector<Film> filmList)
+{
 }
 
 void storeWishList::storeListInBasicFormat(std::vector<Film> filmList)
